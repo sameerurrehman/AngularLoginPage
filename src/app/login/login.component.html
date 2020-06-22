@@ -1,0 +1,67 @@
+
+
+  <div class="main" style="background-image: url(assets/images/background.jpg); background-repeat: no-repeat; background-size: cover;  text-align: center; height: 657px;" >
+    <div class="container  justify-content-center wrapper-body">
+      
+  
+      <div class="header text-center w-100">
+        <img class="rounded" height="60px" width="50%" src="assets/images/final_logo.png" alt="Login">
+      </div>
+      
+  
+      <div class="container">
+        <form [formGroup]="login" style="padding: 0 14px;">
+          <mat-form-field class="col-md-12" style="margin-top: 60px;padding:0;" appearance="outline">
+  
+            <mat-label>User Name</mat-label>
+            <mat-icon matPrefix style="margin-right: 5px; color: #fff;">person</mat-icon>
+            <input matInput required placeholder="Placeholder" type="text" formControlName="Login">
+  
+  
+          </mat-form-field>
+  
+  
+          <mat-form-field class="col-md-12" style="padding:0;" appearance="outline">
+  
+            <mat-label>Password</mat-label> 
+          <mat-icon matPrefix style="margin-right: 5px; color: #fff;">lock</mat-icon>
+            <input matInput required placeholder="Placeholder" type="text" formControlName="password">
+  
+  
+          </mat-form-field>
+        </form>
+      </div>
+  
+      <div class="row" style="text-align: left; margin-left: 60px;">
+        <div class="mr-auto">
+          <mat-checkbox [(ngModel)]="Ischecked" [ngModelOptions]=
+          "{standalone: true}"><span style="color: #fff;">Keep me Logged in.</span></mat-checkbox>
+
+          <!-- <a class="ml-auto" [routerLink]="['/Forget']" style="margin-right: 30px;
+          margin-top: 2px;">
+          <strong style="color: #fff;"> Forgot Password?</strong>
+        </a> -->
+        </div>
+      </div>
+  
+  
+      <div style="margin-top: 25px;padding: 0 15px !important;">
+        <button class="btn-block btn-login" mat-raised-button color="primary" (click)="Login()">
+          <h3 style="margin-top: 10px;outline: none; font-size: 20px; letter-spacing: 1px;">Login</h3>
+        </button>
+      </div>
+           
+      <a class="ml-auto" [routerLink]="['/Forget']" style="text-decoration: none;">
+          <span style="color: #fff;"> Forgot Password?</span>
+        </a>
+    </div>
+  
+  </div>
+
+
+
+ 
+   
+
+  
+
